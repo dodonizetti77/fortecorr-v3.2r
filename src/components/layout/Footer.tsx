@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
-import logo from '@/assets/logo-fortecorr.png';
+import logo from '@/assets/logo-fortecorr-fp.png';
 
 export function Footer() {
   return (
