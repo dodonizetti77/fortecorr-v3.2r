@@ -9,6 +9,8 @@ import spiralStaircase from '@/assets/spiral-staircase.jpg';
 import metalStructure from '@/assets/metal-structure.jpg';
 import heroBg from '@/assets/hero-bg.jpg';
 import beforeAfter from '@/assets/before-after.jpg';
+import beforeHandrail from '@/assets/before-handrail-old.jpg';
+import afterHandrail from '@/assets/after-handrail.jpg';
 
 const categories = ['Todos', 'Residencial', 'Comercial', 'Antes e Depois'];
 
@@ -165,7 +167,7 @@ const Projetos = () => {
               Antes & <span className="text-gradient-petrol">Depois</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Veja a transformação que nossos projetos proporcionam.
+              Transformamos estruturas comuns em projetos de alto padrão. Veja a diferença que o acabamento premium faz.
             </p>
           </motion.div>
 
@@ -177,8 +179,8 @@ const Projetos = () => {
             className="max-w-4xl mx-auto"
           >
             <BeforeAfterSlider 
-              beforeImage={beforeAfter}
-              afterImage={beforeAfter}
+              beforeImage={beforeHandrail}
+              afterImage={afterHandrail}
             />
           </motion.div>
         </div>
