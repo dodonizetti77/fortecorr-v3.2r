@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import logo from '@/assets/logo-fortecorr.png';
+import logo from '@/assets/logo-fortecorr-fp.png';
 
 const navLinks = [
   { name: 'Início', path: '/' },
