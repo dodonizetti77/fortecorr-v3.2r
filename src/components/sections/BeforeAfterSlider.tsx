@@ -70,25 +70,25 @@ export function BeforeAfterSlider({
         handleMove(e.touches[0].clientX);
       }}
     >
-      {/* Before Image (Background - full width, black and white) */}
+      {/* After Image (Background - full width, color) */}
       <img
-        src={beforeImage}
-        alt="Antes (corrimão antigo)"
-        className="absolute inset-0 w-full h-full object-cover grayscale"
+        src={afterImage}
+        alt="Depois (corrimão em aço inox)"
+        className="absolute inset-0 w-full h-full object-cover"
         draggable={false}
         loading="lazy"
         decoding="async"
       />
 
-      {/* After Image (Color, clipped) */}
+      {/* Before Image (Grayscale, clipped from right) */}
       <div
         className="absolute inset-0"
         style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
       >
         <img
-          src={afterImage}
-          alt="Depois (corrimão em aço inox)"
-          className="absolute inset-0 w-full h-full object-cover"
+          src={beforeImage}
+          alt="Antes (corrimão antigo)"
+          className="absolute inset-0 w-full h-full object-cover grayscale"
           draggable={false}
           loading="lazy"
           decoding="async"
