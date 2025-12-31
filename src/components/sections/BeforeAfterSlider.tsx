@@ -64,26 +64,31 @@ export function BeforeAfterSlider({
       onMouseDown={() => setIsDragging(true)}
       onTouchStart={() => setIsDragging(true)}
     >
-      {/* After Image (Background) */}
+      {/* Before Image (Background - full width) */}
       <img
-        src={afterImage}
-        alt="Depois"
+        src={beforeImage}
+        alt="Antes"
         className="absolute inset-0 w-full h-full object-cover"
         draggable={false}
       />
 
-      {/* Before Image (Clipped) */}
+      {/* After Image (Revealed on the right side) */}
       <div 
         className="absolute inset-0 overflow-hidden"
-        style={{ width: `${sliderPosition}%` }}
+        style={{ 
+          left: `${sliderPosition}%`,
+          width: `${100 - sliderPosition}%`
+        }}
       >
         <img
-          src={beforeImage}
-          alt="Antes"
-          className="absolute inset-0 w-full h-full object-cover"
+          src={afterImage}
+          alt="Depois"
+          className="absolute inset-0 h-full object-cover"
           style={{ 
-            width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%',
-            maxWidth: 'none'
+            width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100vw',
+            maxWidth: 'none',
+            left: `-${sliderPosition}%`,
+            marginLeft: containerRef.current ? `-${(sliderPosition / 100) * containerRef.current.offsetWidth}px` : '0'
           }}
           draggable={false}
         />
