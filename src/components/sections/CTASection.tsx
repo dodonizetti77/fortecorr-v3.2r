@@ -7,8 +7,8 @@ export function CTASection() {
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary rounded-full blur-3xl" />
       </div>
 
       <div className="section-container relative">
@@ -23,7 +23,7 @@ export function CTASection() {
           
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foreground mb-6">
             Seu Projeto Merece{' '}
-            <span className="text-gradient-copper">Aço de Alto Padrão</span>
+            <span className="text-gradient-petrol">Aço de Alto Padrão</span>
           </h2>
           
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10">
@@ -37,17 +37,11 @@ export function CTASection() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            <a
-              href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para meu projeto."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="whatsapp" size="xl" className="gap-3 text-lg animate-glow-pulse">
-                <MessageCircle className="w-6 h-6" />
-                Solicitar Orçamento pelo WhatsApp
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </a>
+            <Button variant="whatsapp" size="xl" className="gap-3 text-lg animate-glow-pulse">
+              <MessageCircle className="w-6 h-6" />
+              Solicitar Orçamento pelo WhatsApp
+              <ArrowRight className="w-5 h-5" />
+            </Button>
           </motion.div>
 
           <p className="text-muted-foreground text-sm mt-6">

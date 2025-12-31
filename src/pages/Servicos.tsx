@@ -7,6 +7,7 @@ import detailHandrail from '@/assets/detail-handrail.jpg';
 import guardrailGlass from '@/assets/guardrail-glass.jpg';
 import spiralStaircase from '@/assets/spiral-staircase.jpg';
 import metalStructure from '@/assets/metal-structure.jpg';
+import heroBg from '@/assets/hero-bg.jpg';
 
 const services = [
   {
@@ -67,19 +68,23 @@ const Servicos = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-muted">
-        <div className="section-container">
+      <section className="relative pt-32 pb-20 min-h-[50vh] flex items-center">
+        <div className="absolute inset-0">
+          <img src={heroBg} alt="Serviços" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        <div className="section-container relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-primary text-sm uppercase tracking-widest font-medium">
+            <span className="text-secondary text-sm uppercase tracking-widest font-medium">
               Serviços
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mt-4 mb-6">
-              Soluções em <span className="text-gradient-copper">Aço e Metal</span>
+              Soluções em <span className="text-gradient-petrol">Aço e Metal</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl">
               Oferecemos uma linha completa de serviços em metalurgia de precisão, 
@@ -114,20 +119,14 @@ const Servicos = () => {
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-secondary shrink-0" />
                       <span className="text-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <a
-                  href="https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para corrimão."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="default" size="lg">
-                    Solicitar Orçamento
-                  </Button>
-                </a>
+                <Button variant="default" size="lg">
+                  Solicitar Orçamento
+                </Button>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}

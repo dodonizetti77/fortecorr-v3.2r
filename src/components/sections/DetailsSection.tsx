@@ -38,11 +38,11 @@ export function DetailsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary text-sm uppercase tracking-widest font-medium">
+          <span className="text-secondary text-sm uppercase tracking-widest font-medium">
             Qualidade
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mt-4 mb-6">
-            Detalhes que Fazem a <span className="text-gradient-copper">Diferença</span>
+            Detalhes que Fazem a <span className="text-gradient-petrol">Diferença</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Cada etapa do nosso processo é executada com precisão e cuidado, 
@@ -68,7 +68,7 @@ export function DetailsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <h3 className="font-display text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
+              <h3 className="font-display text-xl text-foreground mb-2 group-hover:text-secondary transition-colors">
                 {detail.title}
               </h3>
               <p className="text-muted-foreground text-sm">

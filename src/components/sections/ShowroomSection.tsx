@@ -43,11 +43,11 @@ export function ShowroomSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary text-sm uppercase tracking-widest font-medium">
+          <span className="text-secondary text-sm uppercase tracking-widest font-medium">
             Showroom Digital
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mt-4 mb-6">
-            Conheça Nossa <span className="text-gradient-copper">Especialidade</span>
+            Conheça Nossa <span className="text-gradient-petrol">Especialidade</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Cada projeto é único. Desenvolvemos soluções em aço e metal que combinam 
@@ -77,14 +77,14 @@ export function ShowroomSection() {
                 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <h3 className="font-display text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="font-display text-2xl md:text-3xl text-foreground mb-2 group-hover:text-secondary transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground text-sm md:text-base">
                     {project.description}
                   </p>
                   
-                  <div className="mt-4 flex items-center gap-2 text-primary opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                  <div className="mt-4 flex items-center gap-2 text-secondary opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                     <span className="text-sm font-medium">Ver mais</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -93,7 +93,7 @@ export function ShowroomSection() {
                 </div>
 
                 {/* Border glow on hover */}
-                <div className="absolute inset-0 border border-primary/0 group-hover:border-primary/50 rounded-lg transition-colors duration-300" />
+                <div className="absolute inset-0 border border-secondary/0 group-hover:border-secondary/50 rounded-lg transition-colors duration-300" />
               </Link>
             </motion.div>
           ))}
