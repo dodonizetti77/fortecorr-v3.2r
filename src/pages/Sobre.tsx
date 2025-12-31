@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Layout } from '@/components/layout/Layout';
 import { CTASection } from '@/components/sections/CTASection';
 import { Shield, Award, Users, Clock, CheckCircle } from 'lucide-react';
@@ -39,6 +40,22 @@ const differentials = [
 const Sobre = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Sobre a FORTECORR | Corrimãos e Estruturas Metálicas em Londrina PR</title>
+        <meta 
+          name="description" 
+          content="Conheça a FORTECORR, especialista em corrimãos, guarda-corpos e estruturas metálicas em Londrina PR. Mais de 10 anos de experiência, 500+ projetos realizados com qualidade e segurança." 
+        />
+        <meta 
+          name="keywords" 
+          content="FORTECORR, corrimão Londrina, guarda-corpo PR, estruturas metálicas, escadas metálicas, serralheria, aço inox, ferro, alumínio, empresa metalúrgica Paraná" 
+        />
+        <link rel="canonical" href="https://fortecorr.com.br/sobre" />
+        <meta property="og:title" content="Sobre a FORTECORR | Corrimãos e Estruturas Metálicas" />
+        <meta property="og:description" content="Especialistas em corrimãos, guarda-corpos e estruturas metálicas de alto padrão em Londrina PR. Qualidade, segurança e pontualidade em cada projeto." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fortecorr.com.br/sobre" />
+      </Helmet>
       {/* Hero */}
       <section className="relative pt-32 pb-20 min-h-[60vh] flex items-center">
         <div className="absolute inset-0">
@@ -78,19 +95,31 @@ const Sobre = () => {
               <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
                 Quem Somos
               </h2>
-              <p className="text-muted-foreground mb-4">
-                A FORTECORR nasceu da paixão por criar estruturas que combinam funcionalidade, 
-                segurança e estética impecável. Somos especialistas em corrimãos, guarda-corpos, 
-                escadas metálicas e projetos especiais sob medida.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Nossa equipe é formada por profissionais altamente qualificados, com vasta 
-                experiência em projetos residenciais e comerciais de todos os portes.
-              </p>
-              <p className="text-muted-foreground">
-                Cada projeto que desenvolvemos carrega nosso compromisso com a excelência, 
-                desde o primeiro contato até a instalação final.
-              </p>
+              <article className="prose prose-lg max-w-none">
+                <p className="text-muted-foreground mb-4">
+                  A <strong>FORTECORR</strong> é uma empresa especializada em <strong>corrimãos, guarda-corpos, 
+                  escadas metálicas e estruturas em aço</strong> localizada em <strong>Londrina, Paraná</strong>. 
+                  Desde nossa fundação, nos dedicamos a transformar ambientes com soluções que unem 
+                  <em>design sofisticado, segurança certificada e durabilidade excepcional</em>.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Atuamos em projetos <strong>residenciais, comerciais e industriais</strong>, atendendo 
+                  construtoras, arquitetos e clientes particulares em toda a região de Londrina e norte do Paraná. 
+                  Nossa equipe técnica é formada por profissionais experientes em <strong>serralheria de precisão</strong>, 
+                  trabalhos com <strong>aço inox, ferro, alumínio e vidro temperado</strong>.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Cada projeto que desenvolvemos segue rigorosos padrões de qualidade e normas técnicas 
+                  de segurança (ABNT NBR 14718), garantindo estruturas resistentes e acabamento impecável. 
+                  Oferecemos desde <strong>corrimãos simples até projetos personalizados</strong> de 
+                  escadas helicoidais, mezaninos e coberturas metálicas.
+                </p>
+                <p className="text-muted-foreground">
+                  Nosso compromisso vai além da fabricação: acompanhamos cada etapa do processo, 
+                  desde o projeto inicial até a instalação final, garantindo a <strong>satisfação total 
+                  do cliente</strong> e a valorização do seu imóvel.
+                </p>
+              </article>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
