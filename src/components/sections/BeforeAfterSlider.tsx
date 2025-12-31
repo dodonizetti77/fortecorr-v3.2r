@@ -64,11 +64,11 @@ export function BeforeAfterSlider({
       onMouseDown={() => setIsDragging(true)}
       onTouchStart={() => setIsDragging(true)}
     >
-      {/* Before Image (Background - full width) */}
+      {/* Before Image (Background - full width, black and white) */}
       <img
         src={beforeImage}
         alt="Antes"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover grayscale"
         draggable={false}
       />
 
