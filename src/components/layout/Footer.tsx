@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import logo from '@/assets/logo-fortecorr-fp.png';
 
 export function Footer() {
@@ -19,26 +19,6 @@ export function Footer() {
             <p className="text-muted-foreground text-sm leading-relaxed">
               Especialistas em corrimãos, guarda-corpos, escadas metálicas e projetos em aço sob medida com acabamento premium.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-secondary/40 transition-colors"
-              >
-                <Instagram size={18} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-secondary/40 transition-colors"
-              >
-                <Facebook size={18} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-secondary/40 transition-colors"
-              >
-                <Linkedin size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Links */}
