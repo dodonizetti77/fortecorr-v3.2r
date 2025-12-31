@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import heroBg from '@/assets/hero-bg.jpg';
 
 const Contato = () => {
   const { toast } = useToast();
@@ -17,41 +18,32 @@ const Contato = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Build WhatsApp message
-    const message = `Olá! Gostaria de solicitar um orçamento.
-
-*Nome:* ${formData.name}
-*E-mail:* ${formData.email}
-*Telefone:* ${formData.phone}
-*Serviço:* ${formData.service}
-*Mensagem:* ${formData.message}`;
-
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-
     toast({
-      title: 'Redirecionando para o WhatsApp...',
-      description: 'Complete o envio pelo WhatsApp para finalizar sua solicitação.',
+      title: 'Formulário enviado!',
+      description: 'Em breve entraremos em contato.',
     });
   };
 
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-muted">
-        <div className="section-container">
+      <section className="relative pt-32 pb-20 min-h-[50vh] flex items-center">
+        <div className="absolute inset-0">
+          <img src={heroBg} alt="Contato" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        <div className="section-container relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-primary text-sm uppercase tracking-widest font-medium">
+            <span className="text-secondary text-sm uppercase tracking-widest font-medium">
               Contato
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mt-4 mb-6">
-              Fale <span className="text-gradient-copper">Conosco</span>
+              Fale <span className="text-gradient-petrol">Conosco</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl">
               Estamos prontos para transformar seu projeto em realidade. 
@@ -85,7 +77,7 @@ const Contato = () => {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground"
+                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors text-foreground"
                     placeholder="Seu nome"
                   />
                 </div>
@@ -99,7 +91,7 @@ const Contato = () => {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground"
+                      className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors text-foreground"
                       placeholder="seu@email.com"
                     />
                   </div>
@@ -112,8 +104,8 @@ const Contato = () => {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground"
-                      placeholder="(11) 99999-9999"
+                      className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors text-foreground"
+                      placeholder="(43) 99999-9999"
                     />
                   </div>
                 </div>
@@ -125,7 +117,7 @@ const Contato = () => {
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground"
+                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors text-foreground"
                   >
                     <option value="">Selecione um serviço</option>
                     <option value="Corrimão em Aço Inox">Corrimão em Aço Inox</option>
@@ -143,13 +135,13 @@ const Contato = () => {
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground resize-none"
+                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors text-foreground resize-none"
                     placeholder="Descreva seu projeto ou dúvida..."
                   />
                 </div>
                 <Button type="submit" variant="default" size="lg" className="w-full gap-2">
                   <Send className="w-5 h-5" />
-                  Enviar pelo WhatsApp
+                  Enviar Mensagem
                 </Button>
               </form>
             </motion.div>
@@ -172,47 +164,31 @@ const Contato = () => {
               </div>
 
               <div className="space-y-6">
-                <a
-                  href="https://wa.me/5511999999999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors group"
-                >
+                <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
                   <div className="w-12 h-12 rounded-full bg-[#25D366]/10 flex items-center justify-center shrink-0">
                     <MessageCircle className="w-6 h-6 text-[#25D366]" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-foreground group-hover:text-primary transition-colors">
+                    <h3 className="font-medium text-foreground">
                       WhatsApp
                     </h3>
-                    <p className="text-muted-foreground">(11) 99999-9999</p>
-                    <p className="text-sm text-primary mt-1">Clique para conversar</p>
-                  </div>
-                </a>
-
-                <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-foreground">Telefone</h3>
-                    <p className="text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-muted-foreground">Clique para conversar</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+                    <Mail className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground">E-mail</h3>
-                    <p className="text-muted-foreground">contato@metalforte.com.br</p>
+                    <p className="text-muted-foreground">contato@fortecorr.com.br</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+                    <Clock className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground">Horário de Atendimento</h3>
@@ -237,10 +213,10 @@ const Contato = () => {
             className="text-center mb-12"
           >
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-              Área de <span className="text-gradient-copper">Atendimento</span>
+              Área de <span className="text-gradient-petrol">Atendimento</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Atendemos toda a região metropolitana de São Paulo e cidades próximas.
+              Atendemos toda a região de Londrina e cidades próximas.
             </p>
           </motion.div>
 
@@ -252,28 +228,28 @@ const Contato = () => {
             className="bg-card rounded-lg border border-border p-8"
           >
             <div className="flex items-start gap-4">
-              <MapPin className="w-8 h-8 text-primary shrink-0" />
+              <MapPin className="w-8 h-8 text-secondary shrink-0" />
               <div>
                 <h3 className="font-display text-2xl text-foreground mb-4">
-                  São Paulo e Região
+                  Londrina - PR e Região
                 </h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
-                    <h4 className="font-medium text-foreground mb-2">Capital</h4>
+                    <h4 className="font-medium text-foreground mb-2">Londrina</h4>
                     <p className="text-muted-foreground text-sm">
-                      Todos os bairros de São Paulo
+                      Todos os bairros
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-foreground mb-2">Grande SP</h4>
+                    <h4 className="font-medium text-foreground mb-2">Região Metropolitana</h4>
                     <p className="text-muted-foreground text-sm">
-                      ABC, Guarulhos, Osasco, Alphaville e região
+                      Cambé, Ibiporã, Rolândia e região
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-foreground mb-2">Interior</h4>
+                    <h4 className="font-medium text-foreground mb-2">Outras Cidades</h4>
                     <p className="text-muted-foreground text-sm">
-                      Consulte disponibilidade para outras cidades
+                      Consulte disponibilidade
                     </p>
                   </div>
                 </div>

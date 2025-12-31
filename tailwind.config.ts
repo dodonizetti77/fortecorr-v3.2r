@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Bebas Neue", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        display: ["Roboto Condensed", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -53,8 +53,7 @@ export default {
         },
         steel: "hsl(var(--steel))",
         graphite: "hsl(var(--graphite))",
-        copper: "hsl(var(--copper))",
-        gold: "hsl(var(--gold))",
+        petrol: "hsl(var(--petrol))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -102,9 +101,9 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-hero": "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(13,13,13,0.95) 100%)",
-        "gradient-metal": "linear-gradient(135deg, hsl(220 8% 12%) 0%, hsl(220 8% 8%) 100%)",
-        "gradient-copper": "linear-gradient(135deg, hsl(25 90% 50%) 0%, hsl(35 80% 55%) 100%)",
+        "gradient-hero": "linear-gradient(180deg, rgba(14,42,54,0.7) 0%, rgba(14,42,54,0.95) 100%)",
+        "gradient-metal": "linear-gradient(135deg, hsl(195 40% 12%) 0%, hsl(195 40% 8%) 100%)",
+        "gradient-petrol": "linear-gradient(135deg, hsl(195 58% 14%) 0%, hsl(195 50% 25%) 100%)",
       },
     },
   },

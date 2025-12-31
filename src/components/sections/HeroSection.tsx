@@ -27,8 +27,8 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
             className="mb-6"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary text-sm font-medium">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-accent/30 border border-accent/50 rounded-full text-foreground text-sm font-medium">
+              <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
               Estruturas Metálicas de Alto Padrão
             </span>
           </motion.div>
@@ -40,7 +40,7 @@ export function HeroSection() {
             className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-foreground leading-[0.95] mb-6"
           >
             Projetos em Aço e Metal que{' '}
-            <span className="text-gradient-copper">Elevam o Padrão</span> da Sua Obra
+            <span className="text-gradient-petrol">Elevam o Padrão</span> da Sua Obra
           </motion.h1>
 
           <motion.p
@@ -59,16 +59,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a
-              href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="hero" size="xl" className="w-full sm:w-auto">
-                Solicitar Orçamento
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </a>
+            <Button variant="hero" size="xl" className="w-full sm:w-auto">
+              Solicitar Orçamento
+              <ArrowRight className="w-5 h-5" />
+            </Button>
             <Link to="/projetos">
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
                 <Play className="w-5 h-5" />
@@ -92,7 +86,7 @@ export function HeroSection() {
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1.5 h-1.5 bg-primary rounded-full"
+              className="w-1.5 h-1.5 bg-secondary rounded-full"
             />
           </div>
         </div>

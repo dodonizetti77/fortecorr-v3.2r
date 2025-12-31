@@ -39,11 +39,11 @@ export function ProcessSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary text-sm uppercase tracking-widest font-medium">
+          <span className="text-secondary text-sm uppercase tracking-widest font-medium">
             Processo
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mt-4 mb-6">
-            Como <span className="text-gradient-copper">Trabalhamos</span>
+            Como <span className="text-gradient-petrol">Trabalhamos</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Do projeto à instalação, cada etapa é executada com excelência 
@@ -53,7 +53,7 @@ export function ProcessSection() {
 
         <div className="relative">
           {/* Connection line */}
-          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
@@ -67,10 +67,10 @@ export function ProcessSection() {
               >
                 {/* Icon container */}
                 <div className="relative inline-flex mb-6">
-                  <div className="w-20 h-20 rounded-full bg-secondary border-2 border-primary/30 flex items-center justify-center group-hover:border-primary transition-colors">
-                    <step.icon className="w-8 h-8 text-primary" />
+                  <div className="w-20 h-20 rounded-full bg-card border-2 border-secondary/30 flex items-center justify-center group-hover:border-secondary transition-colors">
+                    <step.icon className="w-8 h-8 text-secondary" />
                   </div>
-                  <span className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-copper rounded-full flex items-center justify-center text-xs font-bold text-primary-foreground">
+                  <span className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-petrol rounded-full flex items-center justify-center text-xs font-bold text-foreground">
                     {step.number}
                   </span>
                 </div>

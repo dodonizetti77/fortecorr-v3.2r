@@ -52,11 +52,11 @@ const Sobre = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-primary text-sm uppercase tracking-widest font-medium">
+            <span className="text-secondary text-sm uppercase tracking-widest font-medium">
               Sobre Nós
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mt-4 mb-6">
-              Excelência em <span className="text-gradient-copper">Estruturas Metálicas</span>
+              Excelência em <span className="text-gradient-petrol">Estruturas Metálicas</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl">
               Há mais de uma década transformando espaços com projetos em aço e metal de alto padrão.
@@ -79,7 +79,7 @@ const Sobre = () => {
                 Quem Somos
               </h2>
               <p className="text-muted-foreground mb-4">
-                A MetalForte nasceu da paixão por criar estruturas que combinam funcionalidade, 
+                A FORTECORR nasceu da paixão por criar estruturas que combinam funcionalidade, 
                 segurança e estética impecável. Somos especialistas em corrimãos, guarda-corpos, 
                 escadas metálicas e projetos especiais sob medida.
               </p>
@@ -100,19 +100,19 @@ const Sobre = () => {
               className="grid grid-cols-2 gap-4"
             >
               <div className="bg-card p-6 rounded-lg border border-border text-center">
-                <span className="font-display text-4xl text-gradient-copper">10+</span>
+                <span className="font-display text-4xl text-gradient-petrol">10+</span>
                 <p className="text-muted-foreground text-sm mt-2">Anos de Experiência</p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border text-center">
-                <span className="font-display text-4xl text-gradient-copper">500+</span>
+                <span className="font-display text-4xl text-gradient-petrol">500+</span>
                 <p className="text-muted-foreground text-sm mt-2">Projetos Realizados</p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border text-center">
-                <span className="font-display text-4xl text-gradient-copper">100%</span>
+                <span className="font-display text-4xl text-gradient-petrol">100%</span>
                 <p className="text-muted-foreground text-sm mt-2">Clientes Satisfeitos</p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border text-center">
-                <span className="font-display text-4xl text-gradient-copper">5★</span>
+                <span className="font-display text-4xl text-gradient-petrol">5★</span>
                 <p className="text-muted-foreground text-sm mt-2">Avaliação Média</p>
               </div>
             </motion.div>
@@ -131,7 +131,7 @@ const Sobre = () => {
             className="text-center mb-16"
           >
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-              Nossos <span className="text-gradient-copper">Valores</span>
+              Nossos <span className="text-gradient-petrol">Valores</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Os pilares que sustentam cada projeto que desenvolvemos.
@@ -146,9 +146,9 @@ const Sobre = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors"
+                className="bg-card p-6 rounded-lg border border-border hover:border-secondary/50 transition-colors"
               >
-                <value.icon className="w-10 h-10 text-primary mb-4" />
+                <value.icon className="w-10 h-10 text-secondary mb-4" />
                 <h3 className="font-display text-xl text-foreground mb-2">{value.title}</h3>
                 <p className="text-muted-foreground text-sm">{value.description}</p>
               </motion.div>
@@ -168,7 +168,7 @@ const Sobre = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
-                Por que Escolher a <span className="text-gradient-copper">MetalForte</span>?
+                Por que Escolher a <span className="text-gradient-petrol">FORTECORR</span>?
               </h2>
               <p className="text-muted-foreground mb-8">
                 Nosso diferencial está na combinação de expertise técnica, materiais de qualidade 
@@ -184,7 +184,7 @@ const Sobre = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3"
                   >
-                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-secondary shrink-0" />
                     <span className="text-foreground">{item}</span>
                   </motion.li>
                 ))}
@@ -199,11 +199,11 @@ const Sobre = () => {
             >
               <div className="bg-card p-8 rounded-lg border border-border">
                 <p className="text-xl text-foreground italic mb-6">
-                  "A MetalForte superou todas as expectativas. O projeto ficou incrível 
+                  "A FORTECORR superou todas as expectativas. O projeto ficou incrível 
                   e a equipe foi extremamente profissional em todas as etapas."
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-copper flex items-center justify-center text-primary-foreground font-bold">
+                  <div className="w-12 h-12 rounded-full bg-gradient-petrol flex items-center justify-center text-foreground font-bold">
                     RC
                   </div>
                   <div>

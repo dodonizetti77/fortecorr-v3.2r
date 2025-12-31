@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg",
+        default: "bg-accent text-accent-foreground hover:bg-accent/80 shadow-lg",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
+        outline: "border-2 border-accent bg-transparent text-accent-foreground hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg hover:shadow-[0_0_40px_hsl(25_90%_50%/0.3)] hover:scale-105 uppercase tracking-widest font-bold text-base",
-        heroOutline: "border-2 border-foreground/30 bg-transparent text-foreground hover:border-primary hover:text-primary uppercase tracking-widest font-bold text-base",
+        link: "text-secondary underline-offset-4 hover:underline",
+        hero: "bg-gradient-petrol text-foreground shadow-lg hover:shadow-glow hover:scale-105 uppercase tracking-widest font-bold text-base",
+        heroOutline: "border-2 border-foreground/30 bg-transparent text-foreground hover:border-secondary hover:text-secondary uppercase tracking-widest font-bold text-base",
         whatsapp: "bg-[#25D366] text-white hover:bg-[#20BD5A] shadow-lg hover:shadow-[0_0_30px_rgba(37,211,102,0.4)]",
         steel: "bg-steel text-foreground hover:bg-steel/80 border border-border",
       },

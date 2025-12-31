@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import logo from '@/assets/logo-fortecorr.png';
 
 const navLinks = [
   { name: 'Início', path: '/' },
@@ -42,17 +43,11 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gradient-copper rounded flex items-center justify-center shadow-glow">
-              <span className="font-display text-xl text-primary-foreground">M</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-2xl text-foreground group-hover:text-primary transition-colors">
-                METALFORTE
-              </span>
-              <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">
-                Estruturas Premium
-              </span>
-            </div>
+            <img 
+              src={logo} 
+              alt="FORTECORR Logo" 
+              className="h-14 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,13 +59,13 @@ export function Header() {
                 className={cn(
                   'relative text-sm font-medium tracking-wide transition-colors duration-300',
                   location.pathname === link.path
-                    ? 'text-primary'
+                    ? 'text-foreground'
                     : 'text-muted-foreground hover:text-foreground'
                 )}
               >
                 {link.name}
                 {location.pathname === link.path && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-copper rounded-full" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-petrol rounded-full" />
                 )}
               </Link>
             ))}
@@ -78,16 +73,10 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a
-              href="https://wa.me/5511999999999"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="default" size="lg" className="gap-2 bg-gradient-to-r from-primary to-accent hover:shadow-[0_0_40px_hsl(25_90%_50%/0.3)]">
-                <Phone className="w-4 h-4" />
-                Orçamento
-              </Button>
-            </a>
+            <Button variant="default" size="lg" className="gap-2 bg-gradient-petrol hover:shadow-glow">
+              <Phone className="w-4 h-4" />
+              Orçamento
+            </Button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -117,24 +106,17 @@ export function Header() {
               className={cn(
                 'py-3 text-lg font-medium border-b border-border/50 transition-colors',
                 location.pathname === link.path
-                  ? 'text-primary'
+                  ? 'text-foreground'
                   : 'text-muted-foreground'
               )}
             >
               {link.name}
             </Link>
           ))}
-          <a
-            href="https://wa.me/5511999999999"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4"
-          >
-            <Button variant="default" size="lg" className="w-full gap-2 bg-gradient-to-r from-primary to-accent h-14 text-base">
-              <Phone className="w-5 h-5" />
-              Solicitar Orçamento
-            </Button>
-          </a>
+          <Button variant="default" size="lg" className="w-full gap-2 bg-gradient-petrol h-14 text-base mt-4">
+            <Phone className="w-5 h-5" />
+            Solicitar Orçamento
+          </Button>
         </nav>
       </div>
     </header>
