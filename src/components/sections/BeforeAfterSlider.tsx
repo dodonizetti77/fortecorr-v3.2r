@@ -64,31 +64,26 @@ export function BeforeAfterSlider({
       onMouseDown={() => setIsDragging(true)}
       onTouchStart={() => setIsDragging(true)}
     >
-      {/* Before Image (Background - full width, black and white) */}
+      {/* After Image (Background - full width, colorful) */}
       <img
-        src={beforeImage}
-        alt="Antes"
-        className="absolute inset-0 w-full h-full object-cover grayscale"
+        src={afterImage}
+        alt="Depois"
+        className="absolute inset-0 w-full h-full object-cover"
         draggable={false}
       />
 
-      {/* After Image (Revealed on the right side) */}
+      {/* Before Image (Clipped from left, black and white) */}
       <div 
         className="absolute inset-0 overflow-hidden"
-        style={{ 
-          left: `${sliderPosition}%`,
-          width: `${100 - sliderPosition}%`
-        }}
+        style={{ width: `${sliderPosition}%` }}
       >
         <img
-          src={afterImage}
-          alt="Depois"
-          className="absolute inset-0 h-full object-cover"
+          src={beforeImage}
+          alt="Antes"
+          className="absolute top-0 left-0 h-full object-cover grayscale"
           style={{ 
             width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100vw',
-            maxWidth: 'none',
-            left: `-${sliderPosition}%`,
-            marginLeft: containerRef.current ? `-${(sliderPosition / 100) * containerRef.current.offsetWidth}px` : '0'
+            maxWidth: 'none'
           }}
           draggable={false}
         />
@@ -96,26 +91,26 @@ export function BeforeAfterSlider({
 
       {/* Slider Handle */}
       <div 
-        className="absolute top-0 bottom-0 w-1 bg-foreground cursor-ew-resize z-10"
+        className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10"
         style={{ left: `calc(${sliderPosition}% - 2px)` }}
       >
         {/* Handle Circle */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-foreground rounded-full flex items-center justify-center shadow-lg">
-          <div className="flex gap-0.5">
-            <div className="w-0.5 h-4 bg-background rounded-full" />
-            <div className="w-0.5 h-4 bg-background rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-secondary">
+          <div className="flex gap-1">
+            <div className="w-0.5 h-5 bg-secondary rounded-full" />
+            <div className="w-0.5 h-5 bg-secondary rounded-full" />
           </div>
         </div>
       </div>
 
       {/* Labels */}
       <div className="absolute bottom-4 left-4 z-20">
-        <span className="bg-background/80 backdrop-blur-sm px-4 py-2 rounded font-display text-lg text-foreground">
+        <span className="bg-foreground/90 backdrop-blur-sm px-4 py-2 rounded font-display text-lg text-background">
           {beforeLabel}
         </span>
       </div>
       <div className="absolute bottom-4 right-4 z-20">
-        <span className="bg-accent/90 backdrop-blur-sm px-4 py-2 rounded font-display text-lg text-foreground">
+        <span className="bg-secondary backdrop-blur-sm px-4 py-2 rounded font-display text-lg text-white">
           {afterLabel}
         </span>
       </div>
@@ -124,7 +119,7 @@ export function BeforeAfterSlider({
       <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: isDragging ? 0 : 1 }}
-        className="absolute top-4 left-1/2 -translate-x-1/2 bg-background/70 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-muted-foreground z-20"
+        className="absolute top-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-foreground font-medium z-20 shadow-md"
       >
         ← Arraste para comparar →
       </motion.div>
