@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { BeforeAfterSlider } from './BeforeAfterSlider';
-import beforeHandrail from '@/assets/before-handrail.jpg';
+import beforeHandrail from '@/assets/before-handrail-old.jpg';
 import afterHandrail from '@/assets/after-handrail.jpg';
 
 export function BeforeAfterSection() {
