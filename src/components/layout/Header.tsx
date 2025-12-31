@@ -48,6 +48,10 @@ export function Header() {
               alt="FORTECORR Logo" 
               className="h-14 w-auto"
             />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground tracking-wide">FORTECORR</span>
+              <span className="text-xs text-muted-foreground">Corrimãos & Estruturas Metálicas</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
