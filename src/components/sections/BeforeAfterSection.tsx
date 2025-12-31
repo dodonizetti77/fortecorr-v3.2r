@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { BeforeAfterSlider } from './BeforeAfterSlider';
-import beforeAfter from '@/assets/before-after.jpg';
+import beforeHandrail from '@/assets/before-handrail.jpg';
+import afterHandrail from '@/assets/after-handrail.jpg';
 
 export function BeforeAfterSection() {
   return (
@@ -33,8 +34,8 @@ export function BeforeAfterSection() {
           className="max-w-4xl mx-auto"
         >
           <BeforeAfterSlider 
-            beforeImage={beforeAfter}
-            afterImage={beforeAfter}
+            beforeImage={beforeHandrail}
+            afterImage={afterHandrail}
           />
         </motion.div>
 
