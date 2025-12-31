@@ -97,7 +97,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 FORTECORR. Todos os direitos reservados.
+            © {new Date().getFullYear()} FORTECORR. Todos os direitos reservados.
           </p>
           <p className="text-muted-foreground text-sm">
             Desenvolvido com excelência em aço e tecnologia.
