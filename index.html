@@ -19,6 +19,26 @@
   </head>
 
   <body>
+    <script>
+      (function () {
+        try {
+          const url = new URL(window.location.href);
+          const redirect = url.searchParams.get("__redirect");
+          if (!redirect) return;
+
+          url.searchParams.delete("__redirect");
+          const remaining = url.searchParams.toString();
+          const target = decodeURIComponent(redirect);
+          const nextUrl = remaining
+            ? target + (target.includes("?") ? "&" : "?") + remaining
+            : target;
+
+          window.history.replaceState(null, "", nextUrl);
+        } catch {
+          // no-op
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
