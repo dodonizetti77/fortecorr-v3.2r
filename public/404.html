@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <script>
+      // SPA refresh fallback for static hosts that return 404.html on unknown routes
+      (function () {
+        var redirect = window.location.pathname + window.location.search + window.location.hash;
+        window.location.replace("/?__redirect=" + encodeURIComponent(redirect));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
