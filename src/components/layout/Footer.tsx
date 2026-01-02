@@ -79,13 +79,6 @@ export function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail size={18} className="text-secondary mt-1 shrink-0" />
-                <div>
-                  <p className="text-foreground">contato@fortecorr.com.br</p>
-                  <p className="text-muted-foreground text-sm">E-mail</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-secondary mt-1 shrink-0" />
                 <div>
                   <p className="text-foreground">Rua Marechal Deodoro da Fonseca, 511</p>

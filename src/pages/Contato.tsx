@@ -181,15 +181,6 @@ const Contato = () => {
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-foreground">E-mail</h3>
-                    <p className="text-muted-foreground">contato@fortecorr.com.br</p>
-                  </div>
-                </div>
 
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
                   <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
