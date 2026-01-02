@@ -13,7 +13,7 @@ export function Footer() {
               <img 
                 src={logo} 
                 alt="FORTECORR Logo" 
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
