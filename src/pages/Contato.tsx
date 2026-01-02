@@ -18,9 +18,21 @@ const Contato = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const message = `*Solicitação de Orçamento - FortecorR*
+
+*Nome:* ${formData.name}
+*E-mail:* ${formData.email}
+*Telefone:* ${formData.phone}
+*Serviço:* ${formData.service}
+*Mensagem:* ${formData.message || 'Não informada'}`;
+
+    const whatsappUrl = `https://wa.me/5543996779289?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+
     toast({
-      title: 'Formulário enviado!',
-      description: 'Em breve entraremos em contato.',
+      title: 'Redirecionando para o WhatsApp!',
+      description: 'Complete o envio da mensagem no WhatsApp.',
     });
   };
 
