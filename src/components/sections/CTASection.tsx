@@ -37,7 +37,7 @@ export function CTASection() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            <a href="https://wa.me/5543996779289" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5543996779289?text=Ol%C3%A1!%20Vim%20pela%20se%C3%A7%C3%A3o%20de%20or%C3%A7amento%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
               <Button variant="whatsapp" size="xl" className="gap-3 text-lg animate-glow-pulse">
                 <MessageCircle className="w-6 h-6" />
                 Solicitar Orçamento pelo WhatsApp
