@@ -46,7 +46,7 @@ export function Header() {
             <img 
               src={logo} 
               alt="FORTECORR Logo" 
-              className="h-14 w-auto"
+              className="h-10 w-auto"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground tracking-wide">FORTECORR</span>
