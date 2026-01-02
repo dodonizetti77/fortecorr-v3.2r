@@ -15,6 +15,10 @@ export function Footer() {
                 alt="FORTECORR Logo" 
                 className="h-24 w-auto"
               />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-foreground tracking-wide">FORTECORR</span>
+                <span className="text-xs text-muted-foreground">Corrimãos & Projetos em Metal</span>
+              </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Especialistas em corrimãos, guarda-corpos, escadas metálicas e projetos em aço sob medida com acabamento premium.
