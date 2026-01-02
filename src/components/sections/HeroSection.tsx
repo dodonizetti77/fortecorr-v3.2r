@@ -59,10 +59,12 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button variant="hero" size="xl" className="w-full sm:w-auto">
-              Solicitar Orçamento
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="https://wa.me/5543996779289?text=Ol%C3%A1!%20Vim%20pelo%20bot%C3%A3o%20principal%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button variant="hero" size="xl" className="w-full">
+                Solicitar Orçamento
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
             <Link to="/projetos">
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
                 <Play className="w-5 h-5" />
