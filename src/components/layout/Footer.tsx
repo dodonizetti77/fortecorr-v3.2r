@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import logo from '@/assets/logo-fortecorr-fp.png';
+import logo from '@/assets/logo-fortecorr-new.png';
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
               <img 
                 src={logo} 
                 alt="FORTECORR Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
