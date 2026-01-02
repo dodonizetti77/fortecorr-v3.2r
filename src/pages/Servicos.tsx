@@ -124,7 +124,14 @@ const Servicos = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="default" size="lg">
+                <Button 
+                  variant="default" 
+                  size="lg"
+                  onClick={() => {
+                    const message = `Olá! Gostaria de solicitar um orçamento para: *${service.title}*`;
+                    window.open(`https://wa.me/5543996779289?text=${encodeURIComponent(message)}`, '_blank');
+                  }}
+                >
                   Solicitar Orçamento
                 </Button>
               </motion.div>
