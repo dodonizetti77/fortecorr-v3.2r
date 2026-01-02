@@ -50,7 +50,7 @@ export function Header() {
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground tracking-wide">FORTECORR</span>
-              <span className="text-xs text-muted-foreground">Corrimãos & Estruturas Metálicas</span>
+              <span className="text-xs text-muted-foreground">Corrimãos & Projetos em Metal</span>
             </div>
           </Link>
 
@@ -77,10 +77,12 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="default" size="lg" className="gap-2 bg-gradient-petrol hover:shadow-glow">
-              <Phone className="w-4 h-4" />
-              Orçamento
-            </Button>
+            <a href="https://wa.me/5543996779289" target="_blank" rel="noopener noreferrer">
+              <Button variant="default" size="lg" className="gap-2 bg-gradient-petrol hover:shadow-glow">
+                <Phone className="w-4 h-4" />
+                Orçamento
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -117,10 +119,12 @@ export function Header() {
               {link.name}
             </Link>
           ))}
-          <Button variant="default" size="lg" className="w-full gap-2 bg-gradient-petrol h-14 text-base mt-4">
-            <Phone className="w-5 h-5" />
-            Solicitar Orçamento
-          </Button>
+          <a href="https://wa.me/5543996779289" target="_blank" rel="noopener noreferrer" className="block mt-4">
+            <Button variant="default" size="lg" className="w-full gap-2 bg-gradient-petrol h-14 text-base">
+              <Phone className="w-5 h-5" />
+              Solicitar Orçamento
+            </Button>
+          </a>
         </nav>
       </div>
     </header>

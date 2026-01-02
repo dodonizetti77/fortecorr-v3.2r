@@ -59,7 +59,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="text-muted-foreground">Corrimãos em Aço Inox</li>
               <li className="text-muted-foreground">Guarda-corpos Metálicos</li>
-              <li className="text-muted-foreground">Escadas Metálicas</li>
+              <li className="text-muted-foreground">Móveis Industriais</li>
               <li className="text-muted-foreground">Estruturas sob Medida</li>
               <li className="text-muted-foreground">Projetos Especiais</li>
             </ul>
@@ -72,8 +72,10 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-secondary mt-1 shrink-0" />
                 <div>
-                  <p className="text-foreground">WhatsApp</p>
-                  <p className="text-muted-foreground text-sm">Clique para conversar</p>
+                  <a href="https://wa.me/5543996779289" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-secondary transition-colors">
+                    (43) 99677-9289
+                  </a>
+                  <p className="text-muted-foreground text-sm">WhatsApp</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -86,8 +88,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-secondary mt-1 shrink-0" />
                 <div>
-                  <p className="text-foreground">Londrina - PR</p>
-                  <p className="text-muted-foreground text-sm">Atendemos toda região</p>
+                  <p className="text-foreground">Rua Marechal Deodoro da Fonseca, 511</p>
+                  <p className="text-muted-foreground text-sm">Londrina - PR</p>
                 </div>
               </li>
             </ul>

@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import detailHandrail from '@/assets/detail-handrail.jpg';
 import guardrailGlass from '@/assets/guardrail-glass.jpg';
-import spiralStaircase from '@/assets/spiral-staircase.jpg';
+import moveisIndustriais from '@/assets/moveis-industriais.jpg';
 import metalStructure from '@/assets/metal-structure.jpg';
 import heroBg from '@/assets/hero-bg.jpg';
 
@@ -37,16 +37,16 @@ const services = [
     ],
   },
   {
-    id: 'escadas',
-    title: 'Escadas Metálicas Personalizadas',
-    description: 'Escadas que são verdadeiras obras de arte funcional. Do projeto à instalação, criamos escadas únicas que transformam ambientes.',
-    image: spiralStaircase,
+    id: 'moveis-industriais',
+    title: 'Móveis Industriais',
+    description: 'Serralheria fina para espaços corporativos, lojas e showroom. Criamos mobiliário em metal com design moderno e funcional.',
+    image: moveisIndustriais,
     features: [
-      'Escadas retas e caracol',
-      'Degraus em madeira, vidro ou metal',
-      'Estrutura reforçada',
-      'Design exclusivo',
-      'Cálculo estrutural incluso',
+      'Araras e expositores para lojas',
+      'Prateleiras e estantes metálicas',
+      'Mesas e bancadas industriais',
+      'Design personalizado',
+      'Acabamento premium',
     ],
   },
   {
