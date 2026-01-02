@@ -8,7 +8,7 @@ import guardrailGlass from '@/assets/guardrail-glass.jpg';
 import moveisIndustriais from '@/assets/moveis-industriais.jpg';
 import metalStructure from '@/assets/metal-structure.jpg';
 import heroBg from '@/assets/hero-bg.jpg';
-import beforeAfter from '@/assets/before-after.jpg';
+import renovacaoCompleta from '@/assets/renovacao-completa.jpg';
 import beforeHandrail from '@/assets/before-handrail-old.jpg';
 import afterHandrail from '@/assets/after-handrail.jpg';
 
@@ -54,7 +54,7 @@ const projects = [
     id: 6,
     title: 'Renovação Completa',
     category: 'Antes e Depois',
-    image: beforeAfter,
+    image: renovacaoCompleta,
     description: 'Transformação de corrimão antigo para aço inox moderno.',
   },
 ];
