@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import detailHandrail from '@/assets/detail-handrail.jpg';
 import guardrailGlass from '@/assets/guardrail-glass.jpg';
-import spiralStaircase from '@/assets/spiral-staircase.jpg';
+import moveisIndustriais from '@/assets/moveis-industriais.jpg';
 import metalStructure from '@/assets/metal-structure.jpg';
 
 const projects = [
@@ -19,10 +19,10 @@ const projects = [
     link: '/servicos#guarda-corpos',
   },
   {
-    title: 'Escadas Metálicas',
-    description: 'Projetos personalizados e exclusivos',
-    image: spiralStaircase,
-    link: '/servicos#escadas',
+    title: 'Móveis Industriais',
+    description: 'Serralheria fina para espaços corporativos, lojas e showroom',
+    image: moveisIndustriais,
+    link: '/servicos#moveis-industriais',
   },
   {
     title: 'Estruturas Especiais',

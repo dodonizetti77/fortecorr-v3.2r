@@ -5,7 +5,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { BeforeAfterSlider } from '@/components/sections/BeforeAfterSlider';
 import detailHandrail from '@/assets/detail-handrail.jpg';
 import guardrailGlass from '@/assets/guardrail-glass.jpg';
-import spiralStaircase from '@/assets/spiral-staircase.jpg';
+import moveisIndustriais from '@/assets/moveis-industriais.jpg';
 import metalStructure from '@/assets/metal-structure.jpg';
 import heroBg from '@/assets/hero-bg.jpg';
 import beforeAfter from '@/assets/before-after.jpg';
@@ -17,10 +17,10 @@ const categories = ['Todos', 'Residencial', 'Comercial', 'Antes e Depois'];
 const projects = [
   {
     id: 1,
-    title: 'Escada Moderna Residencial',
-    category: 'Residencial',
-    image: spiralStaircase,
-    description: 'Escada caracol em aço carbono com degraus de madeira maciça.',
+    title: 'Móveis Industriais para Loja',
+    category: 'Comercial',
+    image: moveisIndustriais,
+    description: 'Serralheria fina para espaços corporativos, lojas e showroom.',
   },
   {
     id: 2,

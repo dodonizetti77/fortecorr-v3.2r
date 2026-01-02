@@ -37,11 +37,13 @@ export function CTASection() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            <Button variant="whatsapp" size="xl" className="gap-3 text-lg animate-glow-pulse">
-              <MessageCircle className="w-6 h-6" />
-              Solicitar Orçamento pelo WhatsApp
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="https://wa.me/5543996779289" target="_blank" rel="noopener noreferrer">
+              <Button variant="whatsapp" size="xl" className="gap-3 text-lg animate-glow-pulse">
+                <MessageCircle className="w-6 h-6" />
+                Solicitar Orçamento pelo WhatsApp
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
           </motion.div>
 
           <p className="text-muted-foreground text-sm mt-6">

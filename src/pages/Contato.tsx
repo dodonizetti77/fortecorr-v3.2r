@@ -164,7 +164,12 @@ const Contato = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
+                <a 
+                  href="https://wa.me/5543996779289" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border hover:border-[#25D366]/50 transition-colors"
+                >
                   <div className="w-12 h-12 rounded-full bg-[#25D366]/10 flex items-center justify-center shrink-0">
                     <MessageCircle className="w-6 h-6 text-[#25D366]" />
                   </div>
@@ -172,9 +177,9 @@ const Contato = () => {
                     <h3 className="font-medium text-foreground">
                       WhatsApp
                     </h3>
-                    <p className="text-muted-foreground">Clique para conversar</p>
+                    <p className="text-muted-foreground">(43) 99677-9289</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
                   <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
@@ -183,6 +188,17 @@ const Contato = () => {
                   <div>
                     <h3 className="font-medium text-foreground">E-mail</h3>
                     <p className="text-muted-foreground">contato@fortecorr.com.br</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border">
+                  <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-foreground">Endereço</h3>
+                    <p className="text-muted-foreground">Rua Marechal Deodoro da Fonseca, 511</p>
+                    <p className="text-muted-foreground">Londrina - PR</p>
                   </div>
                 </div>
 
