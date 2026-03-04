@@ -77,7 +77,7 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="https://wa.me/5543996779289?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/554341415076?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20contato%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="lg" className="gap-2 bg-gradient-petrol hover:shadow-glow">
                 <Phone className="w-4 h-4" />
                 Orçamento
@@ -119,7 +119,7 @@ export function Header() {
               {link.name}
             </Link>
           ))}
-          <a href="https://wa.me/5543996779289?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" className="block mt-4">
+          <a href="https://wa.me/554341415076?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20contato%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="block mt-4">
             <Button variant="default" size="lg" className="w-full gap-2 bg-gradient-petrol h-14 text-base">
               <Phone className="w-5 h-5" />
               Solicitar Orçamento
