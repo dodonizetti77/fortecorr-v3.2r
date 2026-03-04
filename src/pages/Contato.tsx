@@ -27,7 +27,7 @@ const Contato = () => {
 *Serviço:* ${formData.service}
 *Mensagem:* ${formData.message || 'Não informada'}`;
 
-    const whatsappUrl = `https://wa.me/5543996779289?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/55434141-5076?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 
     toast({
@@ -189,7 +189,7 @@ const Contato = () => {
                     <h3 className="font-medium text-foreground">
                       WhatsApp
                     </h3>
-                    <p className="text-muted-foreground">(43) 99677-9289</p>
+                    <p className="text-muted-foreground">(43) 4141-5076</p>
                   </div>
                 </a>
 
