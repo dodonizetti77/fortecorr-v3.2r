@@ -177,7 +177,7 @@ const Contato = () => {
 
               <div className="space-y-6">
                 <a 
-                  href="https://wa.me/5543996779289?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20contato%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." 
+                  href="https://wa.me/55434141-5076?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20contato%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border hover:border-[#25D366]/50 transition-colors"
