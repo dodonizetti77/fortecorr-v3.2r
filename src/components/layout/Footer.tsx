@@ -76,8 +76,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-secondary mt-1 shrink-0" />
                 <div>
-                  <a href="https://wa.me/5543996779289?text=Ol%C3%A1!%20Vim%20pelo%20rodap%C3%A9%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-secondary transition-colors">
-                    (43) 99677-9289
+                  <a href="https://wa.me/554341415076?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20contato%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-secondary transition-colors">
+                    (43) 4141-5076
                   </a>
                   <p className="text-muted-foreground text-sm">WhatsApp</p>
                 </div>
