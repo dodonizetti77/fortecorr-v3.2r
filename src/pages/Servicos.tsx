@@ -129,7 +129,7 @@ const Servicos = () => {
                   size="lg"
                   onClick={() => {
                     const message = `Olá! Gostaria de solicitar um orçamento para: *${service.title}*`;
-                    window.open(`https://wa.me/5543996779289?text=${encodeURIComponent(message)}`, '_blank');
+                    window.open(`https://wa.me/55434141-5076?text=${encodeURIComponent(message)}`, '_blank');
                   }}
                 >
                   Solicitar Orçamento
